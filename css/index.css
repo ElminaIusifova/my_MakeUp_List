@@ -1,0 +1,167 @@
+@charset 'utf-8';
+/**********************************
+        DEFAULTS
+**********************************/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 20px;
+    font-family: BlinkMacSystemFont, -apple-system, “Segoe UI”, Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+}
+body{
+    min-height: 100vh;
+}
+
+/**********************************
+        LAYOUT
+**********************************/
+.page{
+    transform: translateX(-200%);
+    width: 100%;
+    padding: 5rem 0 2rem 0;
+    transition: transform 0.5s ease-out;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    background-color:#3A55CC;
+}
+.page.active{
+    transform: translateX(0);
+}
+.page header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4.3rem;
+    padding: 0 2rem;
+    border-bottom: 0.3rem solid #333;
+    background-color: #666;
+    color: #EEE;
+    background-color: #24357F;
+}
+.page header>h1{
+    font-size: 2rem;
+    height: 4rem;
+    line-height: 4rem;
+}
+
+.item-name{
+    font-size:20px;
+}
+/**********************************
+        LIST PAGE
+**********************************/
+.item-card{
+    margin: 1rem 2rem;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 2px #ddd;
+    overflow: auto;
+    background-color: #F3D0F5;
+}
+.item-card img{
+    float:left;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+    height: 12 rem;
+    border-right: 1px solid #333;
+}
+.item-title{
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    color: #3A55CC;
+    cursor: pointer;
+}
+.item-title:hover{
+    color: orange;
+}
+.item-desc, .item-desc1, .item-desc2, .item-desc3 {
+    font-size: 0.7rem;
+    font-weight: 100;
+    line-height: 0.7rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    color: #888;
+    height: 8rem;
+    text-overflow: clip;
+    overflow: hidden;
+    
+}
+/**********************************
+        DETAILS PAGE
+**********************************/
+.back-btn{
+    color: #fff;
+    margin-right: 2rem;
+}
+.back-btn:hover{
+    color: orange;
+}
+
+/*
+#details-page{
+  display: block;
+    float: left;
+    width: 50%;
+    height: 50%;
+*/
+}
+/******DOESNT apply*/
+.item-image{
+    float:left;
+    width: 100%;
+    height: 100%;
+  
+}
+
+
+.item-type, .item-color{
+    color: #46218C;
+}
+
+.item-info, .item-price{
+    font-size: 0.7rem;
+    color: #888;
+}
+/*******************************
+
+
+
+
+.item-info{
+/*    color:red;*/
+/**********************************
+        ANIMATIONS
+**********************************/
+
+
+/*************SCREEN SIZE******************/
+
+@media screen and (min-width:500px){
+    
+
+.item-card img{
+
+    padding: 0.5rem;
+    width: 50%;
+    
+}
+    item-title{
+    font-size: 2rem;
+}
+    .item-desc, .item-type, .item-name, .item-price, .item-color, .item-info{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    
+}
